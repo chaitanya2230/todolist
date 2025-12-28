@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Modern Task Manager</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO PAGE -->
+<div id="intro-page">
+    <div class="intro-card">
+        <div class="intro-logo">
+            <i class="fas fa-check-double"></i>
+        </div>
+        <h1 class="intro-title">FocusFlow</h1>
+        <p class="intro-desc">
+            Organize your life, achieve your goals.
+        </p>
+        <button id="start-btn" class="start-btn">Get Started</button>
+    </div>
+</div>
+
+<!-- MAIN APP -->
+<div class="app-wrapper" id="app-wrapper">
+    <div class="glass-card">
+
+        <header class="app-header">
+            <h2>My Tasks</h2>
+            <div class="date-display" id="date-display"></div>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="task-input" class="task-input"
+                   placeholder="Add a new task..." autocomplete="off">
+            <button id="add-btn" class="add-btn">
+                <i class="fas fa-plus"></
+            </button>
+        </div>
+
+        <div class="task-list">
+            <ul id="task-list"></ul>
+
+            <div id="empty-state" class="empty-msg">
+                <i class="fas fa-clipboard-check"></i>
+                <p>All caught up! Enjoy your day.</p>
+            </div>
+        </div>
+
+        <footer class="app-footer">
+            <span id="task-count">0 tasks remaining</span>
+            <button id="clear-btn" class="clear-btn">Clear Completed</button>
+        </footer>
+
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+</body>
+</html>
